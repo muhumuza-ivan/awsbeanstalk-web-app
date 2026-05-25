@@ -25,7 +25,7 @@ public class AppController {
     public ResponseEntity<Map<String, String>> home() {
         return ResponseEntity.ok(Map.of(
                 "status",    "OK",
-                "message",   "Spring Boot app deployed via Elastic Beanstalk",
+                "message",   "Spring Boot app Version 2 - deployed automatically via GitHub Actions",
                 "version",   appVersion,
                 "timestamp", Instant.now().toString()
         ));
