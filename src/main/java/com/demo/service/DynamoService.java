@@ -17,9 +17,9 @@ public class DynamoService {
     private final boolean enabled;
 
     public DynamoService(
-            @Value("${DYNAMO_REGION:us-west-1}") String region,
-            @Value("${DYNAMO_TABLE:AppVisits}") String tableName,
-            @Value("${DYNAMO_ENABLED:false}") boolean enabled) {
+            @Value("${DYNAMO_REGION}") String region,
+            @Value("${DYNAMO_TABLE}") String tableName,
+            @Value("${DYNAMO_ENABLED}") boolean enabled) {
 
         this.tableName = tableName;
         this.enabled = enabled;
